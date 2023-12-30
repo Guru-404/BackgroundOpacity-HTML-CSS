@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    /* background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png'); */
+    /* background-color: rgba(255, 255, 255, 0.01); */
+    /* background-blend-mode: overlay; */
+    color: black;
+}
+body::after {
+    content: "";
+    background-image: url('main-bg.jpg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+h1 {
+    text-align: center;
+}
+p {
+    text-align: left;
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: 525;
+}
+img {
+    display: block;
+    width: 450px;
+    margin: 20px auto;
+}

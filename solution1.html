@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="solution1-styles.css" />
+  </head>
+  <body>
+    <h1>Background Opacity</h1>
+    <p>
+      There is nothing called background opacity. Opacity is applied to the
+      element, its contents and all its child elements, and this behavior cannot
+      be changed just by overriding the opacity in child elements. Child vs
+      parent opacity has been a long standing issue and the most common fix for
+      it is using rgba(r,g,b,alpha) background colors. But in this case, since
+      it is a background-image, that solution won't work. One solution would be
+      to generate the image as a PNG with the required opacity in the image
+      itself. Another solution would be to take the child div out and make it
+      absolutely positioned.
+    </p>
+    <img
+    src="overlay.jpg"
+    alt="overlay-img"
+    />
+    <p>
+      There is no background-opacity property in CSS, but you can fake it by
+      inserting a pseudo element with regular opacity the exact size of the
+      element behind it.
+    </p>
+  </body>
+</html>
